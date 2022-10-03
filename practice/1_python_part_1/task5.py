@@ -13,4 +13,9 @@ Examples:
 
 
 def remove_duplicated_words(line: str) -> str:
-    ...
+    return ' '.join(dict.fromkeys(line.split()))
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
